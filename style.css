@@ -1,0 +1,293 @@
+
+ /* #extenal styling for the size of the text */
+
+ @font-face{
+    font-family: mulish-extra-ligth;
+    src: url( "./font/Mulish-ExtraLight.ttf;");
+
+ }
+
+ @font-face{
+    font-family: mulish-extra-light-italic;
+    src: url( "./font/Mulish-ExtraLightItalic.ttf");
+
+ }
+ @font-face{
+    font-family: mulish-ligth;
+    src: url( "./font/Mulish-Light.ttf;");
+
+ }
+
+ 
+
+@font-face{
+   font-family: mulish-light--italic;
+   src: url( "./font/Mulish-ExtraLightItalic.ttf");
+
+}
+
+@font-face {
+    font-family: mulish- reguler;
+    src: url( "./font/Mulish-Regular.ttf");
+}
+
+@font-face{
+    font-family: mulish-italic;
+    src: url( "./font/Mulish-Italic.ttf");
+}
+
+
+@font-face{
+    font-family: mulish-medium;
+    src: url( "./font/Mulish-Medium.ttf");
+}
+
+@font-face{
+    font-family: mulish-medium-italic;
+    src: url( "./font/Mulish-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: mulish-semi-bold;
+    src: url( "./font/Mulish-SemiBold.ttf");
+
+}
+
+@font-face {
+    font-family: mulish-semi-bold-italic;
+    src: url("./font/Mulish-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: mulish-bold;
+    src: url("./font/Mulish-Bold.ttf");
+}
+
+
+@font-face {
+    font-family: mulish-bold-italic;
+    src: url("./font/Mulish-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: mulish-extra-bold;
+    src: url("./font/Mulish-ExtraBold.ttf");
+}
+@font-face {
+    font-family: mulish-extra-bold-italic;
+    src: url("./font/Mulish-ExtraBoldItalic.ttf");
+}
+
+
+
+
+
+
+
+:root{
+    --primary: #180025;
+    --secondry: #00c55f; 
+    /* #hff */
+    --tertiary: #1f0030;
+
+}
+body {
+    font-size: 25px;
+    width :100% ;
+    padding: 0;
+    margin: 0 ;
+    font-family: mulish-extra-light;
+
+}
+
+.homepage{
+    opacity: 1;
+
+}
+#homepage-main{
+    width: 85%;
+    margin: 0 auto;
+
+}
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1.5rem 2rem;
+}
+.logo{
+    font-family: mulish-medium;
+    display: flex;
+    align-items: center ;
+    font-size : 25px ;
+    font-weight: bolder;
+    
+
+}
+.logo span {
+    color: var(--secondry);
+    
+}
+
+
+
+/* .................*/
+
+.menu-list {
+    font-family: mulish-semi-bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu-items{
+    font-size: 15px;
+    padding: 0.0rem 1.2rem;
+    position: relative;
+    
+}
+
+
+
+
+/* .................*/
+
+.menu-items:first-child {
+padding-left: 0;
+
+}
+
+.menu-items:last-child {
+    margin-left : 1rem;
+    background-color : var(--tertiary);
+    padding: 0.6rem 1.8rem;
+    color : var(--secondry);
+    border-radius: 10px;
+    font-family: mulish-semi-bold;
+
+    }
+
+    .tech-dropdown{
+        display: grid;
+        grid-template-rows: 0fr;
+        position: absolute;
+        top: 100%;
+        background-color: bisque;
+        color: rgb(29, 22, 22);
+        transition: grid-templet-row 0.3s ease;
+        font-size: 15px;
+        width: max-content;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+    }
+    .dropdown-con{
+        overflow: hidden;
+
+    }
+
+    .menu-items:hover .tech-dropdown{
+        grid-template-rows: 1fr;
+    }
+    .dropdown-list{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1rem;
+        margin: 0;
+        list-style-type: none;
+        height: auto;
+        width: max-content;
+
+    }
+
+
+/* ..... HERO STRUCTURE............*/
+
+.hero {
+    padding: 3rem 2rem;
+}
+
+.hero-div {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.hero-left, .hero-right{
+    width: calc((100% - 0rem) / 2);
+}
+
+
+.hero h1{
+    font-family: mulish-bold;
+    
+}
+h1 span{
+    color: var(--secondry);
+}
+
+    .hero p {
+        font-family: mulish-bold;
+        margin: 1.0rem 0 ;
+        font-size: 20px;
+    }
+
+    .hero button {
+        border: none;
+        outline: none;
+        background-color: var(--secondry);
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 0px;
+        padding: 0.6rem 1.5rem;
+        font-family: mulish-medium;
+        margin-top: 30px;
+
+
+    }
+    .hero-icon-list{
+        display: flex;
+        margin: 1rem 0 0;
+        padding: 0;
+        list-style-type: none;
+        gap: 1rem;
+    }
+    .hero-icon-item{
+        width: 30px;
+
+
+    }
+    .bitcoin{
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        color: goldenrod;
+        border-radius: 50px;
+        
+    }
+
+
+    .ethereum{
+        width: 30px;
+        height: 30px;
+        background-color: blue;
+        color: white;
+        border-radius: 50px;
+        
+        
+    }
+
+    .litecoin{
+        width: 30px;
+        height: 30px;
+        background-color: black;
+     
+        border-radius: 50px;
+        
+    }
